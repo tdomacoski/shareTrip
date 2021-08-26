@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Embarca</title>
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+    <script src="./index.js"></script>
+    <script src="./jquery.js"></script>
+  </head>
+  <body>
+    <header>
+        <h1>Embarca - Acompanhamento de Viagem</h1>
+        <div>🚩<b> Saída:</b> <span id="origin"> Curitiba (16:30) </span>  🏁 <b> Chegada:</b> <span id="origin"> Ponta Grossa (18:30) </span>  </div>
+        <br/>
+       
+        <div>🕑<b> Chegada prevista:</b> <span id="finish_at"></span> </div>
+        <br/>
+        <div><b> Última atualização:</b> <span id="update_at"></span> </div>
+        <br/>
+    </header>
+    <article>
+        <div id="map"></div>
+    </article>
+
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCXArvRm5sU0rK7rPKw760DGDbUYtNPR2Y&callback=initMap"
+      async
+    ></script>
+  </body>
+</html>
